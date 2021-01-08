@@ -37,6 +37,9 @@
                             <li>
                                 <a href="forms.php"><i class="fa fa-edit fa-fw"></i> Forms</a>
                             </li>
+                            <li>
+                                <a href="membership.php"><i class="fa fa-table fa-fw"></i> Membership</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
