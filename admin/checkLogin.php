@@ -18,7 +18,7 @@
         $_SESSION['email'] = $email;
         $_SESSION['status'] = "Login";
         $_SESSION['nama'] = $data['nama'];
-        header("location:index.php");
+        header("location:posting.php");
     }else{
         echo "GAGAL";
     }

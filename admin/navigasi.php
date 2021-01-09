@@ -12,7 +12,7 @@
 
                 <ul class="nav navbar-nav navbar-left navbar-top-links">
                     <li><a href="#"><i class="fa fa-home fa-fw"></i> Website</a></li>
-                </ul>
+                </ul> 
                 <ul class="nav navbar-right navbar-top-links">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -29,7 +29,7 @@
                     <div class="sidebar-nav navbar-collapse">
                         <ul class="nav" id="side-menu"> 
                             <li>
-                                <a href="index.php"><i class="fa fa-edit fa-fw"></i> Posting</a>
+                                <a href="posting.php"><i class="fa fa-edit fa-fw"></i> Posting</a>
                             </li>
                             <li>
                                 <a href="tables.php"><i class="fa fa-table fa-fw"></i> Tables</a>
