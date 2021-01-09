@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Halaman Data Admin</title>
+        <title>Halaman Data Membership Baksos</title>
         <?php include('resources.php')?>
     </head>
     <body>
@@ -24,5 +24,47 @@
                             <h1 class="page-header">Mambership</h1>
                         </div>
                     </div>
+
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                        <!-- <button data-toggle="modal" data-target="#myModal" class="btn btn-success" style="margin-bottom: 10px; float:right" data-toggle="addData" data-target="ModalAddData"><i class="fa fa-edit fa-fw"></i>Create New</button> -->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">Alamat</th>
+                                        <th scope="col">No. Telp</th>
+                                        <th scope="col">TTL</th>
+                                        <th scope="col">Asal Kota</th>
+                                        <th scope="col">Email</th>                                  
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <?php 
+                                    include("config.php");
+
+                                    $sql = "SELECT * FROM membership";
+                                    $query = mysqli_query($db, $sql);
+
+                                    while($data = mysqli_fetch_array($query)){
+                                ?>
+                                    <tr>
+                                        <th scope="row"><?= $data['id']?></th>
+                                        <td><?= $data['nama']?></td>
+                                        <td><?= $data['alamat']?></td>
+                                        <td><?= $data['notlp']?></td>
+                                        <td><?= $data['ttl']?></td>
+                                        <td><?= $data['asal kota']?></td>
+                                        <td><?= $data['email']?></td>
+                                    </tr>
+                                    <?php }?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
                     </body>
                     </html>
