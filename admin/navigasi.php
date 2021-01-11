@@ -32,13 +32,13 @@
                                 <a href="posting.php"><i class="fa fa-edit fa-fw"></i> Posting</a>
                             </li>
                             <li>
-                                <a href="tables.php"><i class="fa fa-table fa-fw"></i> Tables</a>
-                            </li>
-                            <li>
-                                <a href="forms.php"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                                <a href="tables.php"><i class="fa fa-table fa-fw"></i> Data Admin</a>
                             </li>
                             <li>
                                 <a href="membership.php"><i class="fa fa-table fa-fw"></i> Membership</a>
+                            </li>
+                            <li>
+                                <a href="forms.php"><i class="fa fa-edit fa-fw"></i> Forms</a>
                             </li>
                         </ul>
                     </div>
