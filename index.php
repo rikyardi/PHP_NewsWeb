@@ -6,7 +6,9 @@
     <title>Halaman Web</title>
     <?php include('resources.php') ?>
 </head>
-<body bgcolor="green">
+<body>
+
+
     <div class="container-fluid">
         <?php
             include('config.php');
@@ -19,11 +21,15 @@
                     <div class="panel panel-default">
                         <div class="panel-heading"><?= $data['judul'] ?></div>
                         <div class="panel-body"><?= $data['deskripsi'] ?></div>
-                        <div class="panel-footer"><button class="btn btn-success">Lihat</button></div>
+                        <div class="panel-footer">
+                            <a href="article.php?id=<?= $data['id']  ?>">
+                            <button class="btn btn-success">Lihat</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-        <?php } ?>
             </div>
+        <?php } ?>
             <div class="col-md-4 bg-dark" >
             d
             </div>

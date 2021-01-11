@@ -34,10 +34,12 @@
                                         <label for="judul" class="form-label">Judul</label>
                                         <input type="text" class="form-control" id="judul" name="judul">
                                         <label for="kategori" class="form-label">Kategori</label>
-                                        <input type="text" class="form-control" id="kategori" name="kategori"><br>
+                                        <input type="text" class="form-control" id="kategori" name="kategori">
+                                        <label for="deskripsi" class="form-label">Deskripsi</label>
+                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi"><br>                    
                                         <textarea class="ckeditor" id="myeditor" name="data"></textarea>
                                         <br/>
-                                        <button class="btn btn-primary" type="submit" >Simpan</button>
+                                        <button class="btn btn-primary" type="submit" name="btn">Simpan</button>
                                     </div>
                                 </div>
                             </form>
