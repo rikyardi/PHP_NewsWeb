@@ -1,3 +1,4 @@
+<?php require_once('auth.php')?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,8 +42,8 @@
                                 </thead>
                                 <tbody>
                                 <?php 
-                                    include("config.php");
-
+                                    require_once('config.php');
+    
                                     $sql = "SELECT * FROM admin";
                                     $query = mysqli_query($db, $sql);
 

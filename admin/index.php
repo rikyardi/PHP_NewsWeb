@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Startmin - Bootstrap Admin Theme</title>
+        <title>Sistem Informasi</title>
         <?php include('resources.php') ?> 
         <script type="text/javascript">
         function validasi() {

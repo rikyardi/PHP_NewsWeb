@@ -1,3 +1,7 @@
+<?php 
+require_once('auth.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,7 +18,7 @@
 
         <div id="wrapper">
             <!-- Navigation START-->
-            <?php include('navigasi.php')?>
+            <?php require('navigasi.php')?>
             <!-- Navigation END-->
 
             <div id="page-wrapper">

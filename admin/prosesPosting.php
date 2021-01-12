@@ -1,5 +1,6 @@
 <?php
-    include('config.php');
+    require_once('config.php');
+    
 
     $judul = $_POST['judul'];
     $kategori = $_POST['kategori'];
@@ -10,4 +11,5 @@
     $sql = "INSERT INTO `posting` VALUES ('', '$judul', '$kategori', '$deskripsi', '$data', '$time')"; 
     $query = mysqli_query($db, $sql);
     header('location:posting.php');
+    exit();
 ?>

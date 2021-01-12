@@ -1,3 +1,5 @@
+<?php 
+require_once('auth.php');?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -42,9 +44,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php 
-                                    include("config.php");
-
+                                <?php     
+                                    require_once('config.php');
                                     $sql = "SELECT * FROM membership";
                                     $query = mysqli_query($db, $sql);
 
