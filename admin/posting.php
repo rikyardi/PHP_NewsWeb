@@ -28,7 +28,6 @@ require_once('auth.php');
                             <h1 class="page-header">Posting</h1>
                         </div>
                     </div>
-
                     <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -36,14 +35,14 @@ require_once('auth.php');
                                 <div class="card">
                                     <div class="card-body">
                                         <label for="judul" class="form-label">Judul</label>
-                                        <input type="text" class="form-control" id="judul" name="judul">
+                                        <input type="text" class="form-control" id="judul" name="judul" required>
                                         <label for="kategori" class="form-label">Kategori</label>
-                                        <input type="text" class="form-control" id="kategori" name="kategori">
+                                        <input type="text" class="form-control" id="kategori" name="kategori" required>
                                         <label for="deskripsi" class="form-label">Deskripsi</label>
-                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi"><br>                    
-                                        <textarea class="ckeditor" id="myeditor" name="data"></textarea>
+                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi" required><br>                    
+                                        <textarea class="ckeditor" id="myeditor" name="data" required></textarea>
                                         <br/>
-                                        <button class="btn btn-primary" type="submit" name="btn">Simpan</button>
+                                        <button class="btn btn-primary" type="submit" name="btn" id="btn">Simpan</button>
                                     </div>
                                 </div>
                             </form>
@@ -51,7 +50,6 @@ require_once('auth.php');
                     </div>
                 </div>
             </div>
-
         <!-- /#wrapper -->
     </body>
 </html>
