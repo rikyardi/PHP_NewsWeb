@@ -89,12 +89,12 @@
     <div class="container">
     
     <div class="container marketing">
-    <div style="background-color: floralwhite;padding:25px ;margin: 50px 0px 20px 0px; border-radius:15px; text-align:center">
+    <div style="background-color: honeydew; padding:35px ;margin: 20px 20px; border-radius:15px; text-align:center">
       <!-- Three columns of text below the carousel -->
       <div class="row">
       
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="asset/img/lazismu.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Beasiswa Lazismu</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><button  class="btn btn-info" data-toggle="collapse" data-target="#lazis"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
@@ -105,8 +105,8 @@
             </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Beasiswa Uhamka Bersholawat</h2>
+          <img class="img-circle" src="asset/img/baznas.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Beasiswa Baznas</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><button  class="btn btn-info" data-toggle="collapse" data-target="#sholawat"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
           <div id="sholawat" class="collapse">
@@ -116,7 +116,7 @@
             </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="asset/img/muhammadiyah.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Beasiswa Muhammadiyah</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><button  class="btn btn-info" data-toggle="collapse" data-target="#muhammadiyah"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
