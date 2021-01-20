@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Web</title>
+    <title>Work & internship</title>
     <?php include('resources.php') ?>
 </head>
 <style>
@@ -13,20 +13,6 @@
         background-attachment: fixed;
         background-size: cover;
     }
-
-    .panel-body img:hover{
-    /* transform: scale(1.5); */
-    position: relative;
-    animation: zoom 5s;
-    }
-
-
-    @keyframes zoom {
-        0%   {scale: 1.0;}
-        25%  {scale: 1.1;}
-
-    }
-
 </style>
 <body>
 <nav class="navbar navbar-inverse" style="padding: 10px;" >
@@ -39,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php" style="padding: 5px;display:flex">
+        <a class="navbar-brand" href="#" style="padding: 5px;display:flex">
             <div style="display: flex;">
             <img src="asset/img/logo.png" style="width: 50px; height:50px; margin-top:-6px; margin-right:5px">
             </div>
@@ -49,8 +35,8 @@
             </div>
         </a>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.php">Beranda<span class="sr-only">(current)</span></a></li>
             <li class="dropdown" data-target="dropdownMahasiswa">
@@ -92,58 +78,39 @@
         </div>
     </div>
     </nav>
-    
-    <div class="jumbotron" style="margin: 20px; background:aliceblue">
-        <div class="container">
-            <h1><b>Official Account</h1>
-            <h2>Mahasiswa & Alumni UHAMKA</b></h2>
-            <p>Selamat datang di sistem informasi mahasiswa dan alumni UHAMKA yang dapat membantu anda lebih baik dan memudahkan anda dalam mencari informasi</p>
-        </div>
-    </div>
-    <div style="padding:20px 0px 20px 20px">
-    <h2>Informasi <strong>Terbaru </strong><sup><span class="label label-danger">New</span></sup></h2>
-    <hr style="border-top: 2px solid aliceblue; width:30%; text-align:left; margin-left:0px">
-    </div>
-    <div class="container-fluid">
-        <?php
-            include('config.php');
+    <!-- blok besar -->
+    <div class="jumbotron" style="text-align: center; margin: 25px; background: cornsilk;">
+        <h1>Mahasiswa Bisa!</h1>
+        <p class="lead">Informasi Lowongan kerja & Magang untuk mahasiswa-mahasiswa terbaik UHAMKA</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+      </div>
 
-            $sql = "SELECT * FROM posting";
-            $query = mysqli_query($db, $sql);
-            
-        ?>
-            <div class="row">
-                <div class="col-md-8">
-                    <div style="background-color: whitesmoke;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px">
-                <?php while($data = mysqli_fetch_array($query)){ ?>
-                    <div class="panel panel-default">
-                        <a href="article.php?id=<?= $data['id']  ?>">
-                            <div class="panel-body" style="display:flex">
-                                <div style="display: flex;width:40%">
-                                    <img src="asset/img/uploads/<?= $data['img']?>" style="width: 300px;height:200px">
-                                </div>
-                                <div style="display:flex;width:60%">
-                                    <h3><?= $data['judul'] ?></h3></div>
-                                </div>                    
-                        </a>
-                    </div>
-    
-                <?php } ?>
-                </div>
-                </div>
-            <div class="col-md-4 " >
-                <div class="panel panel-default">
-                    <div class="panel-heading">title</div>
-                    <div class="panel-body">body</div>
-                    <div class="panel-footer">
-                    <a href="">
-                        <button class="btn btn-success">Lihat</button>
-                    </a>
+
+<!-- blok magang and pekerjaan -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+        <div style="background-color: #FFFACD;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px; text-align : center">
+          <h2>Yuk Magang!</h2>
+          <p class="text-danger">Mari Magang demi memenuhi syarat kelulusan</p>
+          <p>Magang, atau dikenal dengan sebutan internship adalah penempatan kerja dengan perusahaan atau organisasi yang memberikan pengalaman kerja dan keahlian baru, yang dapat berguna untuk karir masa depan. Tujuan dari magang adalah memberikan kesempatan bagi mahasiswa untuk menerapkan apa yang mereka pelajari di ruang kelas ke dunia riil, supaya mereka lebih siap kerja setelah lulus nanti. </p>
+          <p><a class="btn btn-primary" href="#" role="button">Lihat Lebih Lanjut &raquo;</a></p>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+        <div style="background-color: #FFFACD ;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px; text-align: center"> 
+            <h2>Yuk Kerja!</h2>
+                <p class="text-danger">Semua Bisa Kerja</p>
+                <p></p>
+                <p> </p>
+                <a class="btn btn-primary" href="#" role="button">Lihat Lebih Lanjut &raquo;</a></p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+
     <footer class="footer" style="background-color:black; ">
         <div class="container">
             <h4 class="text-muted">
@@ -156,18 +123,5 @@
             <i class="fa fa-youtube fa-fw"></i> MAUP OFFICIAL |
         </div>
     </footer>
-    
-<script>
-    function searchLebar() {
-        $input = document.getElementById('input');
-        $input.style.width = "300px";   
-    }
-    function searchSempit() {
-        $input = document.getElementById('input');
-        $input.style.width = "100px";   
-        
-    }
-
-</script>
 </body>
 </html>

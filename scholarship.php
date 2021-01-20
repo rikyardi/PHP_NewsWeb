@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Web</title>
+    <title>Scholarship</title>
     <?php include('resources.php') ?>
 </head>
 <style>
@@ -13,21 +13,7 @@
         background-attachment: fixed;
         background-size: cover;
     }
-
-    .panel-body img:hover{
-    /* transform: scale(1.5); */
-    position: relative;
-    animation: zoom 5s;
-    }
-
-
-    @keyframes zoom {
-        0%   {scale: 1.0;}
-        25%  {scale: 1.1;}
-
-    }
-
-</style>
+    </style>
 <body>
 <nav class="navbar navbar-inverse" style="padding: 10px;" >
     <div class="container-fluid">
@@ -39,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php" style="padding: 5px;display:flex">
+        <a class="navbar-brand" href="#" style="padding: 5px;display:flex">
             <div style="display: flex;">
             <img src="asset/img/logo.png" style="width: 50px; height:50px; margin-top:-6px; margin-right:5px">
             </div>
@@ -49,15 +35,15 @@
             </div>
         </a>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.php">Beranda<span class="sr-only">(current)</span></a></li>
             <li class="dropdown" data-target="dropdownMahasiswa">
                 <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownMahasiswa" href="#">Mahasiswa & Alumni</a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="scholarship.php"><i class="fa fa-graduation-cap fa-fw"></i> Scholarship</a>
+                        <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Scholarship</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-trophy fa-fw"></i> Tribute</a>
@@ -92,63 +78,64 @@
         </div>
     </div>
     </nav>
-    
-    <div class="jumbotron" style="margin: 20px; background:aliceblue">
-        <div class="container">
-            <h1><b>Official Account</h1>
-            <h2>Mahasiswa & Alumni UHAMKA</b></h2>
-            <p>Selamat datang di sistem informasi mahasiswa dan alumni UHAMKA yang dapat membantu anda lebih baik dan memudahkan anda dalam mencari informasi</p>
-        </div>
-    </div>
-    <div style="padding:20px 0px 20px 20px">
-    <h2>Informasi <strong>Terbaru </strong><sup><span class="label label-danger">New</span></sup></h2>
-    <hr style="border-top: 2px solid aliceblue; width:30%; text-align:left; margin-left:0px">
-    </div>
-    <div class="container-fluid">
-        <?php
-            include('config.php');
 
-            $sql = "SELECT * FROM posting";
-            $query = mysqli_query($db, $sql);
-            
-        ?>
-            <div class="row">
-                <div class="col-md-8">
-                    <div style="background-color: whitesmoke;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px">
-                <?php while($data = mysqli_fetch_array($query)){ ?>
-                    <div class="panel panel-default">
-                        <a href="article.php?id=<?= $data['id']  ?>">
-                            <div class="panel-body" style="display:flex">
-                                <div style="display: flex;width:40%">
-                                    <img src="asset/img/uploads/<?= $data['img']?>" style="width: 300px;height:200px">
-                                </div>
-                                <div style="display:flex;width:60%">
-                                    <h3><?= $data['judul'] ?></h3></div>
-                                </div>                    
-                        </a>
-                    </div>
     
-                <?php } ?>
-                </div>
-                </div>
-            <div class="col-md-4 " >
-                <div class="panel panel-default">
-                    <div class="panel-heading">title</div>
-                    <div class="panel-body">body</div>
-                    <div class="panel-footer">
-                    <a href="">
-                        <button class="btn btn-success">Lihat</button>
-                    </a>
-                </div>
+    <div class="jumbotron" style="text-align: right; margin: 25px; background: mintcream;">
+        <h1>Scholarship</h1>
+        <p class="lead">Informasi Beasiswa terkini.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div>
+
+    <div class="container">
+    
+    <div class="container marketing">
+    <div style="background-color: floralwhite;padding:25px ;margin: 50px 0px 20px 0px; border-radius:15px; text-align:center">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+      
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Beasiswa Lazismu</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><button  class="btn btn-info" data-toggle="collapse" data-target="#lazis"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
+          <div id="lazis" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
-        </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Beasiswa Uhamka Bersholawat</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><button  class="btn btn-info" data-toggle="collapse" data-target="#sholawat"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
+          <div id="sholawat" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Beasiswa Muhammadiyah</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><button  class="btn btn-info" data-toggle="collapse" data-target="#muhammadiyah"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
+          <div id="muhammadiyah" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
     </div>
     </div>
+    </div>
+
     <footer class="footer" style="background-color:black; ">
         <div class="container">
-            <h4 class="text-muted">
+            <h3 class="text-muted">
                 &copy Mahasiswa & Alumni UHAMKA <br>
-            </h4>
+            </h3>
             <i class="fa fa-whatsapp fa-fw"></i> 021-47293102 |
             <i class="fa fa-facebook fa-fw"></i> MAUP |
             <i class="fa fa-twitter fa-fw"></i> @MAUP |
@@ -157,17 +144,5 @@
         </div>
     </footer>
     
-<script>
-    function searchLebar() {
-        $input = document.getElementById('input');
-        $input.style.width = "300px";   
-    }
-    function searchSempit() {
-        $input = document.getElementById('input');
-        $input.style.width = "100px";   
-        
-    }
-
-</script>
 </body>
 </html>
