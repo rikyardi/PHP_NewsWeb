@@ -12,6 +12,7 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
         background-size: cover;
+        /* background by SVGBackgrounds.com */
     }
 
     .panel-body img:hover{
@@ -19,7 +20,6 @@
     position: relative;
     animation: zoom 5s;
     }
-
 
     @keyframes zoom {
         0%   {scale: 1.0;}
@@ -67,6 +67,9 @@
                     </li>
                 </ul>
             </li>
+
+            <li class="dropdown" data-target="dropdownAbout"><a href="about.php">About Us</a>
+
             <li><a href="baksos.php">Membership & Giving</a></li>
             <li class="dropdown" data-target="dropdownAbout">
                 <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownAbout" href="#">About Us</a>
@@ -122,9 +125,11 @@
                                 <div style="display: flex;width:40%">
                                     <img src="asset/img/uploads/<?= $data['img']?>" style="width: 300px;height:200px">
                                 </div>
-                                <div style="display:flex;width:60%">
-                                    <h3><?= $data['judul'] ?></h3></div>
-                                </div>                    
+                                <div style="width:60%">
+                                    <h3><?= $data['judul'] ?></h3>
+                                    <h5><i class="fa fa-edit fa-fw"></i> <?= $data['created_at'] ?></h5>     
+                                    </div>
+                            </div>                    
                         </a>
                     </div>
     
@@ -144,18 +149,7 @@
         </div>
     </div>
     </div>
-    <footer class="footer" style="background-color:black; ">
-        <div class="container">
-            <h4 class="text-muted">
-                &copy Mahasiswa & Alumni UHAMKA <br>
-            </h4>
-            <i class="fa fa-whatsapp fa-fw"></i> 021-47293102 |
-            <i class="fa fa-facebook fa-fw"></i> MAUP |
-            <i class="fa fa-twitter fa-fw"></i> @MAUP |
-            <i class="fa fa-google fa-fw"></i> maup@gmail.com |
-            <i class="fa fa-youtube fa-fw"></i> MAUP OFFICIAL |
-        </div>
-    </footer>
+    <?php include('footer.php') ?>
     
 <script>
     function searchLebar() {

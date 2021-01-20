@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Web</title>
     <?php include('resources.php') ?>
+    <style>
+        p > img{
+            max-width: 100%;
+            height: auto !important;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse" style="padding: 10px;" >
@@ -57,15 +63,7 @@
                 </ul>
             </li>
             <li class="dropdown" data-target="dropdownAbout">
-                <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownAbout" href="#">About Us</a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#"><i class="fa fa-institution fa-fw"></i> Profil</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-history fa-fw"></i> Sejarah</a>
-                    </li>
-                </ul>
+                <a href="about.php">About Us</a>
             </li>
         </ul>
         <form class="navbar-form navbar-right">
@@ -89,13 +87,14 @@
         $sql = "SELECT * FROM posting where id='$id'"; 
         $query = mysqli_query($db, $sql);
         $data = mysqli_fetch_array($query); ?>
-
+        <!-- <img src="admin/kcfinder/upload/images/"> -->
         <h2><?= $data['judul'] ?></h2>
         <h5><?= $data['created_at'] ?></h5>
         <hr>
         <p><?= $data['artikel'] ?></p>
         </div>
     </div>
+<?php include('footer.php')?>
 
 </body>
 </html>
