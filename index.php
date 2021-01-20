@@ -13,6 +13,20 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
+    .panel-body img:hover{
+    /* transform: scale(1.5); */
+    position: relative;
+    animation: zoom 5s;
+    }
+
+
+    @keyframes zoom {
+        0%   {scale: 1.0;}
+        25%  {scale: 1.1;}
+
+    }
+
 </style>
 <body>
 <nav class="navbar navbar-inverse" style="padding: 10px;" >
@@ -25,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" style="padding: 5px;display:flex">
+        <a class="navbar-brand" href="index.php" style="padding: 5px;display:flex">
             <div style="display: flex;">
             <img src="asset/img/logo.png" style="width: 50px; height:50px; margin-top:-6px; margin-right:5px">
             </div>
@@ -38,7 +52,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Beranda<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="index.php">Beranda<span class="sr-only">(current)</span></a></li>
             <li class="dropdown" data-target="dropdownMahasiswa">
                 <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownMahasiswa" href="#">Mahasiswa & Alumni</a>
                 <ul class="dropdown-menu">
@@ -114,7 +128,13 @@
                 <?php while($data = mysqli_fetch_array($query)){ ?>
                     <div class="panel panel-default">
                         <a href="article.php?id=<?= $data['id']  ?>">
-                            <div class="panel-body"><h3><?= $data['judul'] ?></h3></div>                    
+                            <div class="panel-body" style="display:flex">
+                                <div style="display: flex;width:40%">
+                                    <img src="asset/img/uploads/<?= $data['img']?>" style="width: 300px;height:200px">
+                                </div>
+                                <div style="display:flex;width:60%">
+                                    <h3><?= $data['judul'] ?></h3></div>
+                                </div>                    
                         </a>
                     </div>
     

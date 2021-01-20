@@ -17,7 +17,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#" style="padding: 5px;display:flex">
+        <a class="navbar-brand" href="index.php" style="padding: 5px;display:flex">
             <div style="display: flex;">
             <img src="asset/img/logo.png" style="width: 50px; height:50px; margin-top:-6px; margin-right:5px">
             </div>
@@ -30,7 +30,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Beranda</a></li>
+            <li class="active"><a href="index.php">Beranda<span class="sr-only">(current)</span></a></li>
             <li class="dropdown" data-target="dropdownMahasiswa">
                 <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownMahasiswa" href="#">Mahasiswa & Alumni</a>
                 <ul class="dropdown-menu">
@@ -56,7 +56,6 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Contact Us</a></li>
             <li class="dropdown" data-target="dropdownAbout">
                 <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownAbout" href="#">About Us</a>
                 <ul class="dropdown-menu">
@@ -81,6 +80,8 @@
         </div>
     </div>
     </nav>
+    <div class="container-fluid">
+        <div class="col-md-8">
         <?php
         require_once('config.php');
 
@@ -93,6 +94,7 @@
         <h5><?= $data['created_at'] ?></h5>
         <hr>
         <p><?= $data['artikel'] ?></p>
+        </div>
     </div>
 
 </body>

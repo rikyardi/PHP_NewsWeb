@@ -31,13 +31,16 @@ require_once('auth.php');
                     <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                            <form method="POST" action="prosesPosting.php">
+                            <form method="POST" action="prosesPosting.php" enctype="multipart/form-data">
                                 <div class="card">
                                     <div class="card-body">
                                         <label for="judul" class="form-label">Judul</label>
                                         <input type="text" class="form-control" id="judul" name="judul" required>
                                         <label for="kategori" class="form-label">Kategori</label>
-                                        <input type="text" class="form-control" id="kategori" name="kategori" required><br>                    
+                                        <input type="text" class="form-control" id="kategori" name="kategori" required>
+                                        <label for="file" class="form-label">Thumbnail</label>
+                                        <input type="file" class="form-control" id="fileToUpload" name="fileToUpload" required>
+                                        <br>                    
                                         <textarea id="myeditor" name="data" required></textarea>
                                         <br/>
                                         <button class="btn btn-primary" type="submit" name="btn" id="btn">Simpan</button>

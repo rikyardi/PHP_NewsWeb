@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2021 at 04:50 AM
+-- Generation Time: Jan 20, 2021 at 03:25 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.12
 
@@ -76,9 +76,9 @@ INSERT INTO `membership` (`id`, `nama`, `alamat`, `notlp`, `ttl`, `asal kota`, `
 
 CREATE TABLE `posting` (
   `id` int(5) NOT NULL,
+  `img` text NOT NULL,
   `judul` text NOT NULL,
   `kategori` varchar(25) NOT NULL,
-  `deskripsi` text NOT NULL,
   `artikel` text NOT NULL,
   `created_at` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -87,9 +87,8 @@ CREATE TABLE `posting` (
 -- Dumping data for table `posting`
 --
 
-INSERT INTO `posting` (`id`, `judul`, `kategori`, `deskripsi`, `artikel`, `created_at`) VALUES
-(1, 'Hebat! Pria ini bisa melakukan hal yang tidak terduga', 'Terbaru', 'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.', ' The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\r\n', '1/8/2021'),
-(2, 'Apaan tuh', 'Terbaru', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ', '<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n', 'Friday, 08/01/2021');
+INSERT INTO `posting` (`id`, `img`, `judul`, `kategori`, `artikel`, `created_at`) VALUES
+(29, '5ffd36903d0e25ffd36903d0e6269.jpg', 'Rektor Uhamka; Lantik Wakil Dekan FKIP, FEB, dan FFS dengan Memberikan 3 Pesan Penting', 'Terbaru', '<p style=\"text-align: justify;\">Sebagi bentuk peningkatan kualitas kelembagaan yang lebih baik lagi, seorang pimpinan perlu ada orang yang membantu untuk mengelola instansi yang dipimpin. Universitas Muhammadiyah Prof. DR. HAMKA atau&nbsp;<a href=\"https://www.blogger.com/blog/post/edit/2592544939204020935/4583486740003952996\">UHAMKA</a>&nbsp;yang saat ini memiliki 9 Fakultas dan 1 Sekolah Pascasarjana telah melaksanakan pelantikan oleh Rektor Uhamka kepada 11 orang Wakil Dekan untuk ditempatkan di Fakultas Keguan dan Ilmu Pendidikan (FKIP), Fakultas Ekonomi dan Bisnis (FEB), dan Fakultas Farmasi dan Sains (FFS).</p>\r\n\r\n<p style=\"text-align: justify;\">Pelantikan Wakil Dekan yang terlaksana secara hidmat serta mematuhi protokol kesehatan yang sangat ketat pasalnya seluruh tamu undangan mengikuti kegiatan ini secara virtual melalui zoom meeting serta bagi yang menghadiri kegiatan hanya yang terlibat dalam kegiatan pelantikan dengan mengenakan masker, hand sanitizer, serta jaga jarak (11/01).</p>\r\n\r\n<p style=\"text-align: justify;\">Wakil Dekan yang dilantik untuk ditempatkan di&nbsp;<a href=\"https://www.blogger.com/blog/post/edit/2592544939204020935/4583486740003952996\">FKIP</a>&nbsp;Uhamka yaitu Dr. Hj. Sri Astuti, M.Pd. sebagai Wakil Dekan I, Dr. Syamsul Maarif, M.Pd. sebagai Wakil Dekan II, Harinaredi, M.Pd. sebagai Wakil Dekan III, dan&nbsp; Dr. Izza Rahman, MA sebagai Wakil Dekan IV.</p>\r\n\r\n<p style=\"text-align: justify;\">Wakil Dekan yang dilantik untuk ditempatkan di&nbsp;<a href=\"https://www.blogger.com/blog/post/edit/2592544939204020935/4583486740003952996\">FEB</a>&nbsp;Uhamka yaitu Sumardi, S.E., M.Si. sebagai Wakil Dekan I, M. Nurrasyidin, S.E., M.Si. sebagai Wakil Dekan II, Edi Setiawan, S.E., M.M. sebagai Wakil Dekan III dan IV.</p>\r\n\r\n<p style=\"text-align: justify;\">Wakil Dekan yang dilantik untuk ditempatkan di&nbsp;<a href=\"https://www.blogger.com/blog/post/edit/2592544939204020935/4583486740003952996\">FFS</a>&nbsp;Uhamka yaitu Drs. Apt. Inding Gusmayadi, S.Si. sebagai Wakil Dekan I, apt. Kori Yati, M.Farm. sebagai Wakil Dekan II, apt. Kriana Efendi, M.Farm. sebagai Wakil Dekan III, dan&nbsp; Anang Rohwiyono, M. Ag. sebagai Wakil Dekan IV.</p>\r\n\r\n<p style=\"text-align: justify;\">Jabatan sebagai wakil dekan merupakan jabatan tambahan karena pada dasarnya tugas utamanya adalah sebagi dosen. Maka selayaknyalah catur dharma yang harus dilakukan oleh seorang dosen patut untuk dilaksanakan demi meningkatkan kualifikasi diri sendiri dan fakultas.</p>\r\n\r\n<p style=\"text-align: justify;\">Gunawan Suryoputro selaku Rektor Uhamka yang melantik berpesan bahwa bagi yang terpilih sebagai wakil dekan agar terus meningkatkan kualifikasi diri sendiri dan meningkatkan fakultas masing-masing dengan segera melanjutkan pendidikan ke jenjang S3 dan bagi yang telah selesai S3 agar segera mengurus kepangkatannya.</p>\r\n\r\n<p style=\"text-align: justify;\"><img alt=\"\" src=\"/Project-web/admin/kcfinder/upload/images/5ffd360c9af945ffd360c9af9828(1).jpg\" style=\"width: 1280px; height: 719px;\" /></p>\r\n\r\n<p style=\"text-align: justify;\">Selain itu,&nbsp;<a href=\"https://www.blogger.com/blog/post/edit/2592544939204020935/4583486740003952996\">Gunawan</a>&nbsp;menambahkan &ldquo;bagi Bapak/Ibu yang telah dilantik dan mengikrarkan sumpah, saya berpesan dalam 3 poin; agar Bapak/Ibu betul-betul menginternalisasikan sumpah tersebut dalam kehidupan sehari-hari, harus dapat memahami akan renstra yang diberlakukan guna untuk membantu kinerja Dekan sebagai pimpinan saudara di Fakultas masing-masing, dan saya mengingatkan kepada Bapak/Ibu bahwa tugas utama Bapak/Ibu adalah Dosen yang tidak boleh untuk dikesampingkan karena tugas sebagai Wakil Dekan merupakan tugas tambahan. Dilain itu, bagi belum S3 agar segera melanjutkan pendidikannya ke jenjang S3 dan harus segera mengurus kepangkatannya,&rdquo; ujarnya.</p>\r\n\r\n<p style=\"text-align: justify;\">&nbsp;</p>\r\n\r\n<p style=\"text-align: justify;\">&nbsp;</p>\r\n\r\n<p style=\"text-align: justify;\">&nbsp;</p>\r\n\r\n<p style=\"text-align: justify;\">&nbsp;</p>\r\n', 'Wednesday, 20/01/2021');
 
 --
 -- Indexes for dumped tables
@@ -121,7 +120,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `posting`
 --
 ALTER TABLE `posting`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
