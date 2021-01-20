@@ -11,11 +11,6 @@
         <title>Halaman Data Admin</title>
         <?php include('resources.php')?>
 
-        <style>
-            th{
-                text-align: center;
-            }
-        </style>
     </head>
     <body>
 
@@ -41,7 +36,6 @@
                                         <th scope="col">Id</th>
                                         <th scope="col">Judul</th>
                                         <th scope="col">Kategori</th>
-                                        <th scope="col">Deskripsi</th>
                                         <th scope="col">Created at</th>
                                         <th scope="col">Action</th>                                 
                                     </tr>
@@ -61,11 +55,6 @@
                                                 <?= $data['judul']?></td>
                                             </div>
                                         <td><?= $data['kategori']?></td>
-                                        <td>
-                                            <div style="width: 300px; height: 200px;">
-                                                <?= $data['deskripsi']?>
-                                            </div>
-                                        </td>
                                         <td><?= $data['created_at'];?></td>
                                         <td>
                                             <button data-toggle="modal" data-target="#myModal<?= $data['id']?>" class="btn btn-success"  data-target="ModalAddData"><i class="fa fa-eye fa-fw"></i> Lihat</button>
@@ -91,7 +80,7 @@
             <!-- Modal -->
             <div class="modal fade" id="myModal<?=$data['id']?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" style="margin-left:-180px; width:1000px">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h3 class="modal-title" id="myModalLabel">Artikel</h3>

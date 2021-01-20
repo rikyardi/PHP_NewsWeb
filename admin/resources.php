@@ -15,4 +15,4 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="../asset/js/startmin.js"></script>
-<script src="../asset/js/ckeditor/ckeditor.js"></script>
+<script src="ckeditor/ckeditor.js"></script>

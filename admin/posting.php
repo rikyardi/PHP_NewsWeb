@@ -37,10 +37,8 @@ require_once('auth.php');
                                         <label for="judul" class="form-label">Judul</label>
                                         <input type="text" class="form-control" id="judul" name="judul" required>
                                         <label for="kategori" class="form-label">Kategori</label>
-                                        <input type="text" class="form-control" id="kategori" name="kategori" required>
-                                        <label for="deskripsi" class="form-label">Deskripsi</label>
-                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi" required><br>                    
-                                        <textarea class="ckeditor" id="myeditor" name="data" required></textarea>
+                                        <input type="text" class="form-control" id="kategori" name="kategori" required><br>                    
+                                        <textarea id="myeditor" name="data" required></textarea>
                                         <br/>
                                         <button class="btn btn-primary" type="submit" name="btn" id="btn">Simpan</button>
                                     </div>
@@ -51,5 +49,12 @@ require_once('auth.php');
                 </div>
             </div>
         <!-- /#wrapper -->
+        <script>
+        CKEDITOR.replace('myeditor',{
+            filebrowserUploadUrl : 'ck_upload.php',
+            filebrowserUploadMethod : 'form'
+        })
+        </script>
+
     </body>
 </html>

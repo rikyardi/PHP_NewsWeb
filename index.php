@@ -6,6 +6,14 @@
     <title>Halaman Web</title>
     <?php include('resources.php') ?>
 </head>
+<style>
+    body{
+        background-color: #77aa77;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
 <body>
 <nav class="navbar navbar-inverse" style="padding: 10px;" >
     <div class="container-fluid">
@@ -56,7 +64,6 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Contact Us</a></li>
             <li class="dropdown" data-target="dropdownAbout">
                 <a class="dropdown-toggle" data-toggle="dropdown" target="dropdownAbout" href="#">About Us</a>
                 <ul class="dropdown-menu">
@@ -82,14 +89,17 @@
     </div>
     </nav>
     
-    <div class="jumbotron" style="margin: 20px;">
+    <div class="jumbotron" style="margin: 20px; background:aliceblue">
         <div class="container">
             <h1><b>Official Account</h1>
             <h2>Mahasiswa & Alumni UHAMKA</b></h2>
             <p>Selamat datang di sistem informasi mahasiswa dan alumni UHAMKA yang dapat membantu anda lebih baik dan memudahkan anda dalam mencari informasi</p>
         </div>
     </div>
-
+    <div style="padding:20px 0px 20px 20px">
+    <h2>Informasi <strong>Terbaru </strong><sup><span class="label label-danger">New</span></sup></h2>
+    <hr style="border-top: 2px solid aliceblue; width:30%; text-align:left; margin-left:0px">
+    </div>
     <div class="container-fluid">
         <?php
             include('config.php');
@@ -100,17 +110,16 @@
         ?>
             <div class="row">
                 <div class="col-md-8">
+                    <div style="background-color: whitesmoke;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px">
                 <?php while($data = mysqli_fetch_array($query)){ ?>
                     <div class="panel panel-default">
-                        <div class="panel-heading"><?= $data['judul'] ?></div>
-                        <div class="panel-body"><?= $data['deskripsi'] ?></div>
-                        <div class="panel-footer">
-                            <a href="article.php?id=<?= $data['id']  ?>">
-                            <button class="btn btn-success">Lihat</button>
-                            </a>
-                        </div>
+                        <a href="article.php?id=<?= $data['id']  ?>">
+                            <div class="panel-body"><h3><?= $data['judul'] ?></h3></div>                    
+                        </a>
                     </div>
-                    <?php } ?>
+    
+                <?php } ?>
+                </div>
                 </div>
             <div class="col-md-4 " >
                 <div class="panel panel-default">
