@@ -8,7 +8,7 @@
 </head>
 <style>
     body{
-        background-color: #77aa77;
+        background-color: #77aa77 ;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
         background-size: cover;
@@ -34,7 +34,7 @@
     
     <div class="jumbotron" style="margin: 20px; background:aliceblue">
         <div class="container">
-            <h1><b>Official Account</h1>
+            <h1><b>Official Website</h1>
             <h2>Mahasiswa & Alumni UHAMKA</b></h2>
             <p>Selamat datang di sistem informasi mahasiswa dan alumni UHAMKA yang dapat membantu anda lebih baik dan memudahkan anda dalam mencari informasi</p>
         </div>
@@ -52,16 +52,16 @@
             
         ?>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div style="background-color: whitesmoke;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px">
                 <?php while($data = mysqli_fetch_array($query)){ ?>
                     <div class="panel panel-default">
                         <a href="article.php?id=<?= $data['id']  ?>">
                             <div class="panel-body" style="display:flex">
-                                <div style="display: flex;width:40%">
+                                <div style="display: flex;width:35%">
                                     <img src="asset/img/uploads/<?= $data['img']?>" style="width: 300px;height:200px">
                                 </div>
-                                <div style="width:60%">
+                                <div style="width:65%">
                                     <h3><?= $data['judul'] ?></h3>
                                     <h5><i class="fa fa-edit fa-fw"></i> <?= $data['created_at'] ?></h5>     
                                     </div>
@@ -72,18 +72,47 @@
                 <?php } ?>
                 </div>
                 </div>
-            <div class="col-md-4 " >
-                <div class="panel panel-default">
-                    <div class="panel-heading">title</div>
-                    <div class="panel-body">body</div>
-                    <div class="panel-footer">
-                    <a href="">
-                        <button class="btn btn-success">Lihat</button>
-                    </a>
+            <div class="col-md-3 "style="margin-top: -35px;">
+                <h2>Informasi <strong>Penting </strong><sup><span class="label label-danger ">1</span></sup></h2>
+                <hr style="border-top: 2px solid aliceblue; width:80%; text-align:left; margin-left:0px">    
+                <div class="panel panel-primary" >
+                        <div class="panel-heading"><h3>Call for <strong> Humanity</strong></h3></div>
+                        <div class="panel-body">
+                        <p>Halo orang-orang baik! Kami percaya kalian yang memiliki keinginan berbuat baik, menyempatkan diri mencari peluang untuk menjadi relawan, hingga akhirnya sampai membaca tulisan ini. Anda pasti adalah orang-orang baik yang sedang Indonesia butuhkan</p>
+                        <a href="baksos.php"><button class="btn btn-success">Join Us</button> </a>
+                        </div>
+                    </div>
+                <div>
+                <h2>Saran & <strong>Masukan </strong></h2>
+                <hr style="border-top: 2px solid aliceblue; width:80%; text-align:left; margin-left:0px">    
+                <form class="form-horizontal" action="" method="POST">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="nama">Nama:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nama" name="nama">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="telp">Pesan:</label>
+                        <div class="col-sm-10">
+                            <textarea name="pesan" id="pesan" cols="35" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                        </div>
+                    </div>
+                    </form> 
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
     </div>
     <?php include('footer.php') ?>
     
