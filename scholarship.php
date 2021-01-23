@@ -23,10 +23,9 @@
         <p class="lead">Informasi Beasiswa terkini.</p>
       </div>
 
-    <div class="container">
+    <div class="container-fluid" style="background-color: honeydew; padding:50px ;margin: 25px 50px; border-radius:15px; text-align:left">
     
-    <div class="container marketing">
-    <div style="background-color: honeydew; padding:50px ;margin: 25px 0px; border-radius:15px; text-align:left">
+  
       <!-- Three columns of text below the carousel -->
       <div class="row">
       
@@ -53,8 +52,8 @@
           <div id="muhammadiyah" class="collapse">Persyaratan : <br>1. Lulusan SMA/SMK/MA/MAK atau yang sederajat tahun 2018 atau 2019; <br>2. Mempunyai Kartu Tanda Anggota Muhammadiyah (NBM : Nomor Baku Muhammadiyah);Aktif di Ortom Muhammadiyah yang dibuktikan dengan SK kepengurusan atau Surat keterangan Aktif; <br>3. Mendapat rekomendasi dari Pimpinan Ortom Muhammadiyah setempat; <br>4. Sedang tidak menerima beasiswa dari lembaga lain; <br>5. Bersedia aktif di Ikatan Mahasiswa Muhammadiyah setelah dinyatakan lolos mendapatkan beasiswa; <br>6. Kurang mampu secara ekonomi dibuktikan dengan surat keterangan tidak mampu dari Kelurahan/Desa setempat.</div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-    </div>
-    </div>
+  
+    
     </div>
 
     <?php include('footer.php') ?>

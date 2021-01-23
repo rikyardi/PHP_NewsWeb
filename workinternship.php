@@ -33,7 +33,7 @@
           <h2>Yuk Magang!</h2>
           <p class="text-danger">Mari Magang demi memenuhi syarat kelulusan</p>
           <p>Magang, atau dikenal dengan sebutan internship adalah penempatan kerja dengan perusahaan atau organisasi yang memberikan pengalaman kerja dan keahlian baru, yang dapat berguna untuk karir masa depan. Tujuan dari magang adalah memberikan kesempatan bagi mahasiswa untuk menerapkan apa yang mereka pelajari di ruang kelas ke dunia riil, supaya mereka lebih siap kerja setelah lulus nanti. </p>
-          <p><a class="btn btn-primary" href="#" role="button">Lihat Lebih Lanjut &raquo;</a></p>
+          <p><a class="btn btn-primary" href="yumagang.php" role="button">Lihat Lebih Lanjut &raquo;</a></p>
         </div>
         </div>
 
@@ -43,7 +43,7 @@
                 <p class="text-danger">Semua Bisa Kerja</p>
                 <p></p>
                 <p> </p>
-                <a class="btn btn-primary" href="#" role="button">Lihat Lebih Lanjut &raquo;</a></p>
+                <a class="btn btn-primary" href="yukerja.php" role="button">Lihat Lebih Lanjut &raquo;</a></p>
                 </div>
             </div>
         </div>

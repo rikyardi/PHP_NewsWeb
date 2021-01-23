@@ -77,6 +77,8 @@
   </div>
 </div>
 
+<h2 style="text-align:center; margin-top : 50px">Indonesia <strong>Darurat </strong><sup><span class="label label-danger">!</span></sup></h2>
+
 <div class="container" style="background-color:aliceblue ;padding:25px ;margin: 50px 20px; border-radius:15px;">
   <h1>Kalimantan Selatan Terdampak Banjir</h1>
   <p>Penulis: Nicholas Ryan Aditya</p>
