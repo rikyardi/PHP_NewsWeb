@@ -11,6 +11,12 @@
         <title>Halaman Data Admin</title>
         <?php include('resources.php')?>
 
+        <style>
+        p > img{
+            max-width: 100%;
+            height: auto !important;
+        }
+        </style>
     </head>
     <body>
 

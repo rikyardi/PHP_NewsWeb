@@ -85,35 +85,49 @@
                 <div>
                 <h2>Saran & <strong>Masukan </strong></h2>
                 <hr style="border-top: 2px solid aliceblue; width:80%; text-align:left; margin-left:0px">    
-                <form class="form-horizontal" action="" method="POST">
+                <form class="form-horizontal" action="index.php" method="POST">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="nama">Nama:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nama" name="nama">
+                            <input type="text" class="form-control" id="nama" name="nama" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Email:</label>
                         <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="telp">Pesan:</label>
                         <div class="col-sm-10">
-                            <textarea name="pesan" id="pesan" cols="35" rows="5"></textarea>
+                            <textarea name="pesan" id="pesan" cols="35" rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary">Kirim</button>
+                        <button type="submit" name='kirim' class="btn btn-primary">Kirim</button>
                         </div>
                     </div>
                     </form> 
+                    <?php 
+                        if(isset($_POST['kirim'])){
+                            require_once('config.php');
+
+                            $nama = $_POST['nama'];
+                            $email = $_POST['email'];
+                            $pesan = $_POST['pesan'];
+
+                            $sql = "insert into saran values ('', '$nama', '$email', '$pesan')";
+                            $query = mysqli_query($db, $sql);
+                            echo "<script>alert('Sukses')</script>";
+                        }
+                    ?>
                 </div>
             </div>
             </div>
     </div>
+    
     <?php include('footer.php') ?>
     
 <script>

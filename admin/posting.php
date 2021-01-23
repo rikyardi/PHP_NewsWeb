@@ -52,12 +52,19 @@ require_once('auth.php');
                 </div>
             </div>
         <!-- /#wrapper -->
-        <script>
+        <script type="text/javascript">
         CKEDITOR.replace('myeditor',{
             filebrowserUploadUrl : 'ck_upload.php',
             filebrowserUploadMethod : 'form'
-        })
+        });
         </script>
+        <script>
+            $(document).ready(function(){
 
+
+                CKEDITOR.addCss('body {font-family: "Roboto", "Helvetica", "Arial", sans-serif;}');
+                var contentEditor = CKEDITOR.replace( 'myeditor' );
+            });
+            </script>
     </body>
 </html>

@@ -13,8 +13,8 @@
     </style>
 </head>
 <body>
-        <?= include('navbar.php') ?>
-    <div class="container-fluid">
+        <?php include('navbar.php') ?>
+    <div class="container-fluid" style="margin-left: 70px;">
         <div class="col-md-8">
         <?php
         require_once('config.php');
@@ -28,6 +28,14 @@
         <h5><?= $data['created_at'] ?></h5>
         <hr>
         <p><?= $data['artikel'] ?></p>
+        <h3>Bagikan Informasi Ini </h3>
+        <hr style="border-top: 3px solid grey;">
+        <h1>
+        <a href=""><i class="fa fa-facebook fa-fw"></i></a>
+        <a href=""><i class="fa fa-twitter fa-fw"></i></a>
+        <a href=""><i class="fa fa-google fa-fw"></i></a> 
+        <a href=""><i class="fa fa-telegram fa-fw"></i></a>
+            </h1>
         </div>
     </div>
 <?php include('footer.php')?>

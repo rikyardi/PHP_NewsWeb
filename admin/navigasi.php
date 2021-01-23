@@ -40,6 +40,9 @@
                             <li>
                                 <a href="membership.php"><i class="fa fa-table fa-fw"></i> Data Membership</a>
                             </li>
+                            <li>
+                                <a href="saran.php"><i class="fa fa-table fa-fw"></i> Saran & Masukan</a>
+                            </li>
 
                         </ul>
                     </div>
