@@ -21,66 +21,42 @@
     <div class="jumbotron" style="text-align: right; margin: 25px; background: mintcream;">
         <h1>Scholarship</h1>
         <p class="lead">Informasi Beasiswa terkini.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
       </div>
 
     <div class="container">
     
     <div class="container marketing">
-    <div style="background-color: honeydew; padding:25px ;margin: 20px 10px; border-radius:15px; text-align:center">
+    <div style="background-color: honeydew; padding:50px ;margin: 25px 0px; border-radius:15px; text-align:left">
       <!-- Three columns of text below the carousel -->
       <div class="row">
       
         <div class="col-lg-4">
           <img class="img-circle" src="asset/img/lazismu.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Beasiswa Lazismu</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p>Buruan, daftarkan dirimu dari sekarang ! kini Lazismu membuka Beasiswa SARJANAMU. Bagi teman teman yang sudah di terima di Perguruan Tinggi dan mencari informasi beasiswa untuk Sarjana.<br>Yuk simak persyaratan di bawah ini :</p>
           <p><button  class="btn btn-info" data-toggle="collapse" data-target="#lazis"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
-          <div id="lazis" class="collapse">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <div id="lazis" class="collapse">PERSYARATAN UMUM :<br>1. Fotocopy KTP dan KK <br>2. Surat rekomendasi dari Pimpinan Muhammadiyah setempat <br>3. Surat keterangan tidak mampu dari Desa/ Kelurahan <br>4. Fotocoppy Kartu Pelajar/ KTM <br>5. Surat bukti diterima di Perguruan Tinggi <br>6. Fotocoppy Ijazah terakhir/ Raport (Bagi Calon Mahasiswa Baru) / Transkip Nilai (Bagi Mahasiswa) <br>7. Denah lokasi tempat tinggal <br> <br>Contact Person :  <br>085803222237 – WA <br> 082155332425 – SMS / Telp <br>
             </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="asset/img/baznas.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Beasiswa Baznas</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p>DIBUKA BEASISWA RISET BAZNAS 2020/2021</p>
           <p><button  class="btn btn-info" data-toggle="collapse" data-target="#sholawat"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
-          <div id="sholawat" class="collapse">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
+          <div id="sholawat" class="collapse">Ketentuan umum: <br>1. Mahasiswa S1/S2/S3 yang sedang menyelesaikan skripsi/tesis/disertasi pada tahun 2020 <br>2. Proposal penelitian telah disetujui oleh pihak kampus <br>3. Tema skripsi/tesis/disertasi (tugas akhir) yang diprioritaskan: <br>a. Kajian implementasi IZN (Indeks Zakat Nasional) <br>b. Kajian implementasi IDZ (Indeks Desa Zakat) <br>c. Kajian dampak penyaluran zakat terhadap mustahik menggunakan model Cibest maupun indeks kemiskinan dan kesenjangan lainnya. <br>d. Kajian dampak zakat terhadap kesejahteraan masyarakat dan SDGs <br>e. Kajian fiqih zakat kontemporer (zakat perusahaan, e-commerces,dll) <br>f. Sosiologi dan pemberdayaan masyarakat berbasis zakat <br>g. Kebijakan dan strategi optimalisasi penghimpunan zakat <br>h. Literasi zakat dan pemahaman publik tentang zakat <br>i. Desain dan kreativitas fotografi, cinematografi dan illustrasi mengenai zakat (baru) <br>j. Perancangan kampanye komunikasi visual digital ziswaf (baru) <br>k. Topik topik lain yang relevan dengan pembangunan zakat nasional dan internasional. <br>4. Hak cipta hasil penelitian tetap berada pada peneliti dan kampus, akan tetapi BAZNAS diberikan hak untuk mempublikasikan sebagian atau seluruh hasil skripsi/tesis/disertasi dan menggunakan hasil penelitian tersebut untuk kepentingan pembangunan zakat nasional dengan tetap memperhatikan etika ilmiah dan bebas dari unsur kejahatan akademik. <br> Mendaftar di http://beasiswa.baznas.go.id</div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="asset/img/muhammadiyah.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Beasiswa Muhammadiyah</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Komponen Beasiswa dari program ini adalah biaya pendidikan selama 4 tahun yang akan di evaluasi nilai akademiknya disetiap semesternya dengan minimal IPK 3.00 untuk program studi ilmu sosial dan IPK 2.75 untuk program studi ilmu Eksakta.</p>
           <p><button  class="btn btn-info" data-toggle="collapse" data-target="#muhammadiyah"><i class="fa fa-eye fa-fw"></i> View Details</button></p>
-          <div id="muhammadiyah" class="collapse">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
+          <div id="muhammadiyah" class="collapse">Persyaratan : <br>1. Lulusan SMA/SMK/MA/MAK atau yang sederajat tahun 2018 atau 2019; <br>2. Mempunyai Kartu Tanda Anggota Muhammadiyah (NBM : Nomor Baku Muhammadiyah);Aktif di Ortom Muhammadiyah yang dibuktikan dengan SK kepengurusan atau Surat keterangan Aktif; <br>3. Mendapat rekomendasi dari Pimpinan Ortom Muhammadiyah setempat; <br>4. Sedang tidak menerima beasiswa dari lembaga lain; <br>5. Bersedia aktif di Ikatan Mahasiswa Muhammadiyah setelah dinyatakan lolos mendapatkan beasiswa; <br>6. Kurang mampu secara ekonomi dibuktikan dengan surat keterangan tidak mampu dari Kelurahan/Desa setempat.</div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
     </div>
     </div>
 
-    <footer class="footer" style="background-color:black; ">
-        <div class="container">
-            <h3 class="text-muted">
-                &copy Mahasiswa & Alumni UHAMKA <br>
-            </h3>
-            <i class="fa fa-whatsapp fa-fw"></i> 021-47293102 |
-            <i class="fa fa-facebook fa-fw"></i> MAUP |
-            <i class="fa fa-twitter fa-fw"></i> @MAUP |
-            <i class="fa fa-google fa-fw"></i> maup@gmail.com |
-            <i class="fa fa-youtube fa-fw"></i> MAUP OFFICIAL |
-        </div>
-    </footer>
-    
+    <?php include('footer.php') ?>
 </body>
 </html>
