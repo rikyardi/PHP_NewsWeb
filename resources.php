@@ -16,3 +16,9 @@
 <!-- Custom Theme JavaScript -->
 <script src="asset/js/startmin.js"></script>
 <script src="asset/js/ckeditor/ckeditor.js"></script>
+<script>
+    function searchLebar() {
+        $input = document.getElementById('input');
+        $input.style.width = "300px";   
+    }
+</script>

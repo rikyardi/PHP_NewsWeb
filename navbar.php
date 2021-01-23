@@ -44,7 +44,7 @@
         </ul>
         <form class="navbar-form navbar-right" action="search.php" method="get">
             <div class="form-group">
-                <input type="text" class="form-control" onclick="searchLebar()" name="input" id="input" placeholder="Search" style="width:100px;">
+                <input type="text" class="form-control" onclick="searchLebar()" name="input" id="input" placeholder="Judul" style="width:100px;">
             </div>
             <button type="submit" class="btn btn-default"><i class="fa fa-search fa-fw"></i></button>
         </form>

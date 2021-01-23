@@ -47,7 +47,7 @@
         <?php
             include('config.php');
 
-            $sql = "SELECT * FROM posting";
+            $sql = "SELECT * FROM `posting` ORDER BY created_at asc limit 5";
             $query = mysqli_query($db, $sql);
             
         ?>
@@ -71,6 +71,9 @@
     
                 <?php } ?>
                 </div>
+                <a href="allArticle.php" style=" color:black"><h4>Lihat Selengkapnya  <i class="fa fa-angle-double-right  fa-fw"></i></h4></a>
+                <hr style="border-top: 5px solid blue; width:30%; text-align:left; margin-left:0px">
+    
                 </div>
             <div class="col-md-3 "style="margin-top: -35px;">
                 <h2>Informasi <strong>Penting </strong><sup><span class="label label-danger ">1</span></sup></h2>
@@ -128,19 +131,6 @@
             </div>
     </div>
     
-    <?php include('footer.php') ?>
-    
-<script>
-    function searchLebar() {
-        $input = document.getElementById('input');
-        $input.style.width = "300px";   
-    }
-    function searchSempit() {
-        $input = document.getElementById('input');
-        $input.style.width = "100px";   
-        
-    }
-
-</script>
+    <?php include('footer.php') ?>    
 </body>
 </html>
