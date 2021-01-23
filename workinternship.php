@@ -33,7 +33,7 @@
           <h2>Yuk Magang!</h2>
           <p class="text-danger">Mari Magang demi memenuhi syarat kelulusan</p>
           <p>Magang, atau dikenal dengan sebutan internship adalah penempatan kerja dengan perusahaan atau organisasi yang memberikan pengalaman kerja dan keahlian baru, yang dapat berguna untuk karir masa depan. Tujuan dari magang adalah memberikan kesempatan bagi mahasiswa untuk menerapkan apa yang mereka pelajari di ruang kelas ke dunia riil, supaya mereka lebih siap kerja setelah lulus nanti. </p>
-          <p><a class="btn btn-primary" href="#" role="button">Lihat Lebih Lanjut &raquo;</a></p>
+          <p><a class="btn btn-primary" href="yumagang.php" role="button">Lihat Lebih Lanjut &raquo;</a></p>
         </div>
         </div>
 
@@ -43,24 +43,12 @@
                 <p class="text-danger">Semua Bisa Kerja</p>
                 <p></p>
                 <p> </p>
-                <a class="btn btn-primary" href="#" role="button">Lihat Lebih Lanjut &raquo;</a></p>
+                <a class="btn btn-primary" href="yukerja.php" role="button">Lihat Lebih Lanjut &raquo;</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <footer class="footer" style="background-color:black; ">
-        <div class="container">
-            <h4 class="text-muted">
-                &copy Mahasiswa & Alumni UHAMKA <br>
-            </h4>
-            <i class="fa fa-whatsapp fa-fw"></i> 021-47293102 |
-            <i class="fa fa-facebook fa-fw"></i> MAUP |
-            <i class="fa fa-twitter fa-fw"></i> @MAUP |
-            <i class="fa fa-google fa-fw"></i> maup@gmail.com |
-            <i class="fa fa-youtube fa-fw"></i> MAUP OFFICIAL |
-        </div>
-    </footer>
+    <?php include('footer.php') ?>
 </body>
 </html>

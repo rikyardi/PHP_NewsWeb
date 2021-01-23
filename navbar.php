@@ -29,7 +29,7 @@
                         <a href="scholarship.php"><i class="fa fa-graduation-cap fa-fw"></i> Scholarship</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-trophy fa-fw"></i> Tribute</a>
+                        <a href="tribute.php"><i class="fa fa-trophy fa-fw"></i> Tribute</a>
                     </li>
                     <li>
                         <a href="workinternship.php"><i class="fa fa-building fa-fw"></i> Work & Internship</a>
