@@ -31,7 +31,7 @@
                             <h3 class="panel-title">Please Sign In</h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form" method="POST" action="checkLogin.php" onsubmit="return validasi()">
+                            <form role="form" method="POST" action="index.php" onsubmit="return validasi()">
                                 <fieldset>
                                     <div class="form-group">
                                         <input class="form-control" placeholder="E-mail" id="email" name="email" type="email" autofocus>
@@ -53,5 +53,31 @@
                 </div>
             </div>
         </div>
+        <?php
+
+    require_once('config.php');
+    
+    if(isset($_POST['btn'])){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $sql = "SELECT * FROM `admin` WHERE email='$email' and password='$password'";
+        $query = mysqli_query($db, $sql);
+        $cek = mysqli_num_rows($query);
+        $data = mysqli_fetch_array($query);
+        
+        if ($cek > 0) {
+            session_id('admin');
+            session_start();
+            $_SESSION['email'] = $email;
+            $_SESSION['status'] = "Login";
+            $_SESSION['nama'] = $data['nama'];
+            header("location:posting.php");
+            exit();
+        }else{
+            echo "<script>alert('Gagal Login, silahkan cek kembali email dan password anda')</script>";
+        }
+    }
+?>
     </body>
 </html>

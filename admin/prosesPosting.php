@@ -11,6 +11,8 @@
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $temp = explode(".", $_FILES["fileToUpload"]["name"]);
+    $newfilename = round(microtime(true)) . '.' . end($temp);
 
     // Check if image file is a actual image or fake image
     if(isset($_POST["submit"])) {
@@ -48,14 +50,10 @@
     echo "Sorry, your file was not uploaded.";
     // if everything is ok, try to upload file
     } else {
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-    } else {
-        echo "Sorry, there was an error uploading your file.";
-    }
+        move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_dir.$newfilename);
     }
 // ================================================================
-    $filename = $_FILES["fileToUpload"]["name"];
+    $filename = $newfilename;
     $sql = "INSERT INTO `posting` VALUES ('', '$filename', '$judul', '$kategori', '$data', '$time')"; 
     $query = mysqli_query($db, $sql);
     header('location:posting.php');

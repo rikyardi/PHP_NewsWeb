@@ -42,7 +42,7 @@
                 <a href="about.php">About Us</a>
             </li>
         </ul>
-        <form class="navbar-form navbar-right" action="search.php" method="get">
+        <form class="navbar-form navbar-right" action="search.php" method="POST">
             <div class="form-group">
                 <input type="text" class="form-control" onclick="searchLebar()" name="input" id="input" placeholder="Judul" style="width:100px;">
             </div>

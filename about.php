@@ -192,6 +192,61 @@ body{
                 </div>
             </div>
         </div>
+      <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+          <h1>Our <strong>Team </strong></h1>
+          <hr style="border-top:5px solid white; width : 15%">
+          <hr style="border-top:5px solid white; width : 30%">
+          <div class="col-md-3">
+                <img src="asset/img/riky.jpg" style="border-radius: 50%; height:200px; width:200px;">
+                <h3>Riky <strong>Ardiansyah</strong></h3>
+                <h4><strong>PROGRAMMER</strong></h4>
+                  <hr style="border-top: 5px solid aliceblue;">
+                  <div style="text-align:left">
+                  <h4><i class="fa fa-github fa-fw"></i>rikyardi
+                      <i class="fa fa-instagram fa-fw"></i>riky.ardi <br>
+                      
+                  </h4>
+                  </div>   
+          </div>
+          <div class="col-md-3">
+                <img src="asset/img/1520149535334.jpg" style="border-radius: 50%; height:200px; width:200px;">
+                <h3>Dafi <strong>Mu'Ammar Z</strong></h3>
+                <h4><strong>PROGRAMMER</strong></h4>
+                  <hr style="border-top: 5px solid aliceblue;">
+                  <div style="text-align: left;">
+                      <h4><i class="fa fa-github fa-fw"></i>dafimz
+                      <i class="fa fa-instagram fa-fw"></i>dafimz <br>
+                  </h4>
+                  </div>   
+          </div>
+          <div class="col-md-3">
+                <img src="asset/img/fitra.PNG" style="border-radius: 50%; height:200px; width:200px;">
+                <h3>Muhammad <strong>Fitra</strong></h3>
+                <h4><strong>UI/UX Design</strong></h4>
+                  <hr style="border-top: 5px solid aliceblue;">
+                  <div style="text-align: left;">
+                  <h4><i class="fa fa-facebook fa-fw"></i>Muhammad Fitra
+                      <i class="fa fa-instagram fa-fw"></i>fitramanang 
+                      <i class="fa fa-youtube fa-fw"></i>MUHAMMAD FITRA 
+                  </h4>   
+                  </div>
+          </div>
+          <div class="col-md-3">
+                <img src="asset/img/muzadi.PNG" style="border-radius: 50%; height:200px; width:200px;">
+                <h3>Akhmad <strong>Muzadi</strong></h3>
+                <h4><strong>UI/UX Design</strong></h4>
+                  <hr style="border-top: 5px solid aliceblue;">
+                  <div style="text-align: left;">
+                  <h4><i class="fa fa-facebook fa-fw"></i>akhmad muzadi
+                      <i class="fa fa-instagram fa-fw"></i>muzadi_akh88 
+                      <i class="fa fa-youtube fa-fw"></i>akhmad muzadi
+                  </h4>   
+                  </div>
+          </div>
+        </div>
+      
+      </div>
     </div>
     <?php include('footer.php')?>
 </body>

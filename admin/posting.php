@@ -37,9 +37,13 @@ require_once('auth.php');
                                         <label for="judul" class="form-label">Judul</label>
                                         <input type="text" class="form-control" id="judul" name="judul" required>
                                         <label for="kategori" class="form-label">Kategori</label>
-                                        <input type="text" class="form-control" id="kategori" name="kategori" required>
+                                        <select class="form-control" name="kategori" id="kategori">
+                                            <option value="terbaru">Terbaru</option>
+                                            <option value="baksos">Baksos</option>
+                                            <option value="tribute">Tribute</option>
+                                        </select>
                                         <label for="file" class="form-label">Thumbnail</label>
-                                        <input type="file" class="form-control" id="fileToUpload" name="fileToUpload" required>
+                                        <input type="file" class="form-control" id="fileToUpload" name="fileToUpload">
                                         <br>                    
                                         <textarea id="myeditor" name="data" required></textarea>
                                         <br/>

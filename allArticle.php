@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <?php
             include('config.php');
-            $sql = "SELECT * FROM `posting` ORDER BY created_at asc";
+            $sql = "SELECT * FROM `posting` where kategori='terbaru' ORDER BY created_at asc";
             $query = mysqli_query($db, $sql);
         ?>
             <div class="row">

@@ -40,7 +40,8 @@ require_once('auth.php');?>
                                         <th scope="col">No. Telp</th>
                                         <th scope="col">TTL</th>
                                         <th scope="col">Asal Kota</th>
-                                        <th scope="col">Email</th>                                  
+                                        <th scope="col">Email</th> 
+                                        <th scope="col">Action</th>                                 
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -59,6 +60,7 @@ require_once('auth.php');?>
                                         <td><?= $data['ttl']?></td>
                                         <td><?= $data['asal kota']?></td>
                                         <td><?= $data['email']?></td>
+                                        <td><a href="hapusMember.php?id=<?=$data['id']?>">Delete</a></td>
                                     </tr>
                                     <?php }?>
                                 </tbody>

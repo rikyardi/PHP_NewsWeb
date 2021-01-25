@@ -47,7 +47,7 @@
         <?php
             include('config.php');
 
-            $sql = "SELECT * FROM `posting` ORDER BY created_at asc limit 5";
+            $sql = "SELECT * FROM `posting` Where kategori='terbaru' ORDER BY created_at asc limit 5";
             $query = mysqli_query($db, $sql);
             
         ?>
@@ -104,7 +104,7 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="telp">Pesan:</label>
                         <div class="col-sm-10">
-                            <textarea name="pesan" id="pesan" cols="35" rows="5" required></textarea>
+                            <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="form-group">

@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <?php
             include('config.php');
-            $judul = $_GET['input'];
+            $judul = $_POST['input'];
             $sql = "SELECT * FROM posting WHERE judul LIKE '%$judul%' ";
             $query = mysqli_query($db, $sql);
         ?>
