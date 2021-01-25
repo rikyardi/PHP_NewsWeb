@@ -41,8 +41,7 @@
         <div style="background-color: #FFFACD ;padding:20px;margin: -10px 0px 20px 0px; border-radius:10px; text-align: center"> 
             <h2>Yuk Kerja!</h2>
                 <p class="text-danger">Semua Bisa Kerja</p>
-                <p></p>
-                <p> </p>
+                <p>Kerja merupakan sesuatu yang dikeluarkan oleh seseorang sebagai profesi, sengaja dilakukan untuk mendapatkan penghasilan. Kerja dapat juga di artikan sebagai pengeluaran energi untuk kegiatan yang dibutuhkan oleh seseorang untuk mencapai tujuan tertentu. Menurut Dr. Franz Von Magnis di dalam Anogara (2009 : 11), pekerjaan adalah “kegiatan yang direncanakan”. Sedangkan Hegel di dalam Anogara (2009 : 12) menambahkan bahwa “inti pekerjaan adalah kesadaran manusia”.</p>
                 <a class="btn btn-primary" href="yukerja.php" role="button">Lihat Lebih Lanjut &raquo;</a></p>
                 </div>
             </div>

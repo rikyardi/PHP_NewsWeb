@@ -33,7 +33,7 @@
               <div id="tiketcom" class="collapse"><strong>1. University students pursuing a good Bachelor's degree in any discipline at a top local or overseas university. <br>2. Assisting Market Manager on internal process.</strong>
               <br>
               <br>
-              <p><a class="btn btn-primary" href="#" role="button">Apply On Company Site</a></p>
+              <p><a class="btn btn-primary" href="https://jobs.smartrecruiters.com/Tiketcom/743999731779716-internship-international-business-6-months-" role="button">Apply On Company Site</a></p>
               </div>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
@@ -43,7 +43,7 @@
               <div id="texmura" class="collapse"><b>1. Bersedia magang full time 3 bulan. <br>2. Mahasiswa tingkat akhir/fresh graduate. <br>3. Dapat berkomunikasi dengan baik dan mudah beradaptasi.</b>
               <br>
               <br> 
-              <p><a class="btn btn-primary" href="#" role="button">Apply Now</a></p>
+              <p><a class="btn btn-primary" href="https://id.indeed.com/lowongan-kerja?q=Magang%2C%20Mahasiswa%2C%20Internship&l=Jakarta&jt=internship&vjk=5122ca03b0ba68c9" role="button">Apply Now</a></p>
             </div>
             </div><!--/.col-xs-6.col-lg-4-->
 
@@ -54,7 +54,7 @@
               <div id="megasetia" class="collapse"><b>Requirements : <br>Maintenance: 1 tahun (D1-D4) <br>1. Pendidikan minimal D3 Teknik Elektro. <br>2. Memiliki pengalaman di bidang maintenance (AC, Genset, dan kelistrikan) minimal 1 tahun. <br>3. Expected Start Date: 2/1/2021..</b>
               <br>
               <br> 
-              <p><a class="btn btn-primary" href="#" role="button">Apply Now</a></p>
+              <p><a class="btn btn-primary" href="https://id.indeed.com/lowongan-kerja?q=Magang%2C%20Mahasiswa%2C%20Internship&l=Jakarta&jt=internship&vjk=5122ca03b0ba68c9" role="button">Apply Now</a></p>
             </div>
             </div><!--/.col-xs-6.col-lg-4-->
 </div>

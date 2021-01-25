@@ -156,14 +156,15 @@ body{
                     <div class="panel-body">
                         <h1><strong>Profil</strong></h1>
                         <hr style="border-top: 5px solid aliceblue;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>MAUP adalah organisasi yang dibuat dengan maksud memberi wadah kreasi dan jalinan penghubung bagi mahasiswa dan alumni Universitas Muhammadiyah Prof. Dr. Hamka yang dipelopori oleh mahasiswa aktif fakultas teknik progam studi teknik informatika UHAMKA. Dengan harapan jalinan antara mahasiswa dan alumni UHAMKA terjalin dengan baik dan bermanfaat bagi Universitas Khususnya dan Mahasiswa, alumni umumnya.</p>
                     </div>
                 </div>
                 <div class="panel panel-default" style="border-radius: 20px;">
                     <div class="panel-body">
                         <h1><strong>Visi & Misi</strong></h1>
                         <hr style="border-top: 5px solid aliceblue;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p><b>Visi :<b> <br> 1. Menjadi wadah informasi yang bermanfaat bagi mahasiswa, alumni serta universitas <br>2. Menjadi penyalur informasi antar fakultas dan program studi <br>3. Menjadi penyalur informasi kemanusiaan</p>
+                        <p><b>Misi : <b> <br> 1. Membuat platform yang ramah, baik, dan bermanfaat bagi semua civitas akademik UHAMKA dan masyarakat </p>
                     </div>
                 </div>
             </div>
@@ -173,20 +174,19 @@ body{
                 <div class="timeline" style="margin-bottom: 15px;">
                 <div class="container left" style="margin: -4px;">
                     <div class="content">
-                    <h2>2017</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
+                    <h2>2021</h2>
+                    <p>Website Sistem informasi Selesai dibentuk</div>
                 </div>
                 <div class="container right" style="margin: 4px;">
                     <div class="content">
-                    <h2>2016</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    <h2>2020</h2>
+                    <p>Pembentukan Organisasi MAUP</p>
                     </div>
                 </div>
                 <div class="container left" style="margin: -4px;">
                     <div class="content">
-                    <h2>2015</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    <h2>2019</h2>
+                    <p>Covid-19 Menyerang Dunia</p>
                     </div>
                 </div>
                 </div>
