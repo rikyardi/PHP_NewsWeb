@@ -19,7 +19,7 @@
         <?php
             include('config.php');
             $judul = $_POST['input'];
-            $sql = "SELECT * FROM posting WHERE judul LIKE '%$judul%' ";
+            $sql = "SELECT * FROM posting WHERE kategori='terbaru' and judul LIKE '%$judul%' ";
             $query = mysqli_query($db, $sql);
         ?>
             <div class="row">

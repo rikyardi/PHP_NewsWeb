@@ -58,10 +58,10 @@
                     <div class="panel panel-default">
                         <a href="article.php?id=<?= $data['id']  ?>">
                             <div class="panel-body" style="display:flex">
-                                <div style="display: flex;width:35%">
+                                <div class="col-md-4">
                                     <img src="asset/img/uploads/<?= $data['img']?>" style="width: 300px;height:200px">
                                 </div>
-                                <div style="width:65%">
+                                <div class="col-md-7">
                                     <h3><?= $data['judul'] ?></h3>
                                     <h5><i class="fa fa-edit fa-fw"></i> <?= $data['created_at'] ?></h5>     
                                     </div>
@@ -70,12 +70,11 @@
                     </div>
     
                 <?php } ?>
-                </div>
                 <a href="allArticle.php" style=" color:black"><h4>Lihat Selengkapnya  <i class="fa fa-angle-double-right  fa-fw"></i></h4></a>
                 <hr style="border-top: 5px solid blue; width:30%; text-align:left; margin-left:0px">
-    
                 </div>
-            <div class="col-md-3 "style="margin-top: -35px;">
+                </div>
+            <div class="col-md-3 "style="margin-top: 0px;">
                 <h2>Informasi <strong>Penting </strong><sup><span class="label label-danger ">1</span></sup></h2>
                 <hr style="border-top: 2px solid aliceblue; width:80%; text-align:left; margin-left:0px">    
                 <div class="panel panel-primary" >
@@ -86,51 +85,10 @@
                         </div>
                     </div>
                 <div>
-                <h2>Saran & <strong>Masukan </strong></h2>
-                <hr style="border-top: 2px solid aliceblue; width:80%; text-align:left; margin-left:0px">    
-                <form class="form-horizontal" action="index.php" method="POST">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="nama">Nama:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nama" name="nama" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-10">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="telp">Pesan:</label>
-                        <div class="col-sm-10">
-                            <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" name='kirim' class="btn btn-primary">Kirim</button>
-                        </div>
-                    </div>
-                    </form> 
-                    <?php 
-                        if(isset($_POST['kirim'])){
-                            require_once('config.php');
-
-                            $nama = $_POST['nama'];
-                            $email = $_POST['email'];
-                            $pesan = $_POST['pesan'];
-
-                            $sql = "insert into saran values ('', '$nama', '$email', '$pesan')";
-                            $query = mysqli_query($db, $sql);
-                            echo "<script>alert('Sukses')</script>";
-                        }
-                    ?>
-                </div>
             </div>
             </div>
     </div>
-    
+    </div>
     <?php include('footer.php') ?>    
 </body>
 </html>
